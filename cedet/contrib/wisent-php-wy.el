@@ -2,8 +2,8 @@
 
 ;; Copyright (C) 2008 Free Software Foundation
 
-;; Author: Matthew Bennett <matthew@ubuntop>
-;; Created: 2010-04-06 11:53:19+0100
+;; Author: Matthew Bennett <matthew@serv>
+;; Created: 2010-04-06 12:21:06+0100
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 

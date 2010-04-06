@@ -2,8 +2,8 @@
 
 ;; Copyright (C) 2002, 2003, 2004 David Ponce
 
-;; Author: Matthew Bennett <matthew@ubuntop>
-;; Created: 2010-04-06 11:52:36+0100
+;; Author: Matthew Bennett <matthew@serv>
+;; Created: 2010-04-06 12:17:32+0100
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 

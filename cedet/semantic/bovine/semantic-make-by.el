@@ -2,8 +2,8 @@
 
 ;; Copyright (C) 1999, 2000, 2001, 2002, 2003, 2004, 2008 Eric M. Ludlam
 
-;; Author: Matthew Bennett <matthew@ubuntop>
-;; Created: 2010-04-06 11:52:56+0100
+;; Author: Matthew Bennett <matthew@serv>
+;; Created: 2010-04-06 12:20:48+0100
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 

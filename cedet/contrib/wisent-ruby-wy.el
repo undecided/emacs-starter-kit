@@ -2,8 +2,8 @@
 
 ;;; Copyright (C) 2007 Daniel Debertin (debertin@gmail.com)
 
-;; Author: Matthew Bennett <matthew@ubuntop>
-;; Created: 2010-04-06 11:53:19+0100
+;; Author: Matthew Bennett <matthew@serv>
+;; Created: 2010-04-06 12:21:05+0100
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 
