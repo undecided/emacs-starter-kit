@@ -70,6 +70,12 @@
       user-specific-dir (concat dotfiles-dir user-login-name))
 (add-to-list 'load-path user-specific-dir)
 
+(if (file-exists-p system-specific-config) (load system-specific-config))
+(if (file-exists-p user-specific-config) (load user-specific-config))
+(if (file-exists-p user-specific-dir)
+  (mapc #'load (directory-files user-specific-dir nil ".*el$")))
+
+
 ;; Yasnippet - required for cucumber, probably useful in general
 (add-to-list 'load-path (concat dotfiles-dir "/plugins/yasnippet"))
 (require 'yasnippet) ;; not yasnippet-bundle
@@ -77,16 +83,15 @@
 (yas/load-directory (concat dotfiles-dir "/plugins/yasnippet/snippets"))
 
 ;; cucumber snippets and major mode
-(add-to-list 'load-path (concat dotfiles-dir "/cucumber/"))
+(add-to-list 'load-path (concat dotfiles-dir "/cucumber"))
 (require 'feature-mode)
 (add-to-list 'auto-mode-alist '("\.feature$" . feature-mode))
 
+(load-file (concat dotfiles-dir "/cedet/common/cedet.el"))
+(global-ede-mode 1)                      ; Enable the Project management system
+(semantic-load-enable-code-helpers)      ; Enable prototype help and smart completion 
+(global-srecode-minor-mode 1)            ; Enable template insertion menu
 
-
-(if (file-exists-p system-specific-config) (load system-specific-config))
-(if (file-exists-p user-specific-config) (load user-specific-config))
-(if (file-exists-p user-specific-dir)
-  (mapc #'load (directory-files user-specific-dir nil ".*el$")))
 
 (color-theme-twilight)
 
