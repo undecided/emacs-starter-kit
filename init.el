@@ -87,11 +87,14 @@
 (require 'feature-mode)
 (add-to-list 'auto-mode-alist '("\.feature$" . feature-mode))
 
+;; CEDET
 (load-file (concat dotfiles-dir "/cedet/common/cedet.el"))
 (global-ede-mode 1)                      ; Enable the Project management system
 (semantic-load-enable-code-helpers)      ; Enable prototype help and smart completion 
 (global-srecode-minor-mode 1)            ; Enable template insertion menu
 
+;; Rudel - like subethaedit for emacs
+(load-file (concat dotfiles-dir "/rudel/rudel-loaddefs.el"))
 
 (color-theme-twilight)
 
